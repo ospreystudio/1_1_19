@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import BaseModel from "@/components/BaseModel";
+const app = createApp(App)
 
-createApp(App).mount('#app')
+app.component('base-modal', BaseModel)
+
+app.mount('#app')
